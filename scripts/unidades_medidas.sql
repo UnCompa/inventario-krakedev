@@ -1,7 +1,9 @@
+--DROP TABLE unidades_medida;
+--DROP TABLE categorias_unidad_medida;
 DROP TABLE IF EXISTS categorias_unidad_medida;
 ---Creando tabla de categorias para las unidades de medida
 CREATE TABLE categorias_unidad_medida (
-codigo_udm char(1) not null,
+codigo_udm char(2) not null,
 nombre varchar(100) not null,
 constraint categorias_unidad_medida_pk primary key (codigo_udm)
 );
